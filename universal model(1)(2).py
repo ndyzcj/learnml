@@ -80,6 +80,7 @@ _)
 print(grid_result.best_score_)
 RFC_best = grid_result.best_estimator_
 joblib.dump(RFC_best,'RFC_B')
+
 # 3.XGBoost（多分类）
 model_xgb = XGBClassifier() # 多分类'multi:softmax'
 learning_rate = [0.01,0.1,0.2,0.3] #学习率[0.0001,0.001,0.01,0.1,0.2,0.3]
